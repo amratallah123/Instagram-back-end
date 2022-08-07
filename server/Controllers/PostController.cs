@@ -26,9 +26,6 @@ namespace server.Controllers
                    nameof(fileExtensionContentTypeProvider));
         }
 
-
-     
-
         [HttpPost("{caption}")]
         public async Task<ActionResult> CreatePost(string username, string caption, IList<IFormFile>? files) {
             try
